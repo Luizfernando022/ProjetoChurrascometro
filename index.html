@@ -23,12 +23,17 @@
 
     <section id="sectionCalc">
         <h2 style="padding:50px;">Calcule Aqui</h2>
+        <div id="result">
+            
+        </div>
         <div id="calc">
+            <h2 style="text-align: center;">Informe a quantidade de pessoas<br> e a duração do evento</h2>
             <form action="" id="form">
-                <input type="number" placeholder="Quantidade de crianças" id="i1">
-                <input type="number" placeholder="Quantidade de adultos" id="i2">
-                <input type="number" placeholder="Duração(Horas)" id="i3">
+                <input type="number" placeholder="Quantidade de crianças" id="i1" class="inputs">
+                <input type="number" placeholder="Quantidade de adultos" id="i2" class="inputs">
+                <input type="number" placeholder="Duração(Horas)" id="i3" class="inputs">
             </form>
+            <p id="erro"></p>
             <input type="button" value="Calcular" id="btn">
         </div>
     </section>
