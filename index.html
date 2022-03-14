@@ -12,21 +12,31 @@
 
 <body>
     <header> 
-        <div style="display: flex;  align-items: center; justify-content: space-evenly;"><img src="./Sources/icons8-churrasqueira-48.png" alt=""><h2>Churrascômetro</h2></div>
-        <div id="logo">
-            <a href="" ><p>Meu Github</p></a>
+        <div style="display: flex;  align-items: center; justify-content: space-evenly;" id="logo"><img src="./Sources/icons8-churrasqueira-48.png" alt="logo" width="40px"><h2 style="font-size: 1.2rem;">Churrascômetro</h2></div>
+        <div id="menu">
+            <a href="#" ><p>Meu Github</p></a>
            
-            <a href="" ><p>Projetos</p></a>
-          
+            <a href="#" ><p>Projetos</p></a>
+           
         </div>
+        <div id="menuAba"><img src="./Sources/icons8-cardápio-50.png" id="btnmenu" alt="menu" width="30px"  statusAba="close" ></div>
+
     </header>
+    <section id="aba">
+        <a href="#" ><p>Meu Github</p></a>
+     
+           
+        <a href="#" ><p>Projetos</p></a>
+        
+    </section>
 
     <section id="sectionCalc">
-        <h2 style="padding:50px;">Calcule Aqui</h2>
+        <h2 style=" padding: 50px;">Calcule Aqui</h2>
         <div id="result">
             <div id="r1" class="r"></div>
             <div id="r2" class="r"></div>
             <div id="r3" class="r"></div>
+            <div id="r4" class="r"></div>
         </div>
         <div id="calc">
             <h2 style="text-align: center;">Informe a quantidade de pessoas<br> e a duração do evento</h2>
@@ -39,6 +49,12 @@
             <p id="erro"></p>
             <input type="button" value="Calcular" id="btn">
         </div>
+    </section>
+
+    <section id="sectionGitHub">
+        <div id="gitHub"><img src="./Sources/96695552.jpg" style="border-radius: 250px; animation-name: gitanime; animation-duration: 500ms; animation-iteration-count: infinite; animation-fill-mode: forwards; animation-direction: alternate; animation-timing-function: cubic-bezier(0,1,0,0);"
+             width="250px" alt="FotoPerfil"><br>
+            <p>Olá, me chamo Luiz Fernando, tenho 19 anos e estou atualmente estudando Desenvolvimento Web Full Stack com <a href="https://programadorbr.com/" target="_blank" rel="noreferrer noopener" style="color:#cf1829; text-decoration: none;">Programador BR.</a></p></div>
     </section>
 </body>
 <script src="js.js"></script>
