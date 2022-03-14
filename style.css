@@ -77,13 +77,11 @@ header, h2,p{
   color: white;
 }
 #menuAba {
-  margin-right: 10px;
-  
   background-color: gray;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 60px;
+  height: 100%;
   width: 60px;
   display: none;
 }
@@ -127,7 +125,7 @@ header, h2,p{
   max-width: 1300px;
   padding: 30px;
   background-color: #1e1e1e;
-  border-radius: 50px;
+  border-radius: 20px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -146,7 +144,7 @@ header, h2,p{
   max-width: 1300px;
   padding: 30px;
   background-color: #1e1e1e;
-  border-radius: 50px;
+  border-radius: 20px;
   display: grid;
   grid-template-areas:
     "r1 r1"
@@ -184,6 +182,7 @@ header, h2,p{
 
 #result p {
   font-size: 25px;
+  color: gray;
 }
 #form {
   display: grid;
@@ -204,6 +203,7 @@ header, h2,p{
   border: 2px solid black;
   background-color: black;
   cursor: text;
+  color: white;
 }
 .inputs:focus {
   border: 2px solid #cf1829;
@@ -238,7 +238,7 @@ header, h2,p{
   height: 500px;
   display: flex;
   flex-direction: row;
-  justify-content:start;
+  justify-content:space-around;
   align-items: center;
   min-width: 300px;
   text-align: center;
@@ -255,6 +255,18 @@ align-items: center;
 color: rgb(191, 191, 24);
 }
 #gitHub p{
+  color: gray;
+}
+#gitHubLink{
+  height: 90%;
+  width: 30%;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+#gitHubLink p{
   color: gray;
 }
 
@@ -303,5 +315,21 @@ color: rgb(191, 191, 24);
   #menuAba {
     display: flex;
     
+  }
+  #sectionGitHub{
+    flex-direction: column;
+    height: 700px;
+    align-items: center;
+    justify-content: e;
+  }
+  #gitHub{
+    width: 100%;
+    margin-left: 0px;
+    margin-top: 20px;
+  }
+  #gitHubLink{
+    width: 100%;
+    margin-left: 0px;
+    margin-top: 20px;
   }
 }
