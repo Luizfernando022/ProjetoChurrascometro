@@ -14,19 +14,19 @@
     <header> 
         <div style="display: flex;  align-items: center; justify-content: space-evenly;" id="logo"><img src="./Sources/icons8-churrasqueira-48.png" alt="logo" width="40px"><h2 style="font-size: 1.2rem;color: gray;">Churrascômetro</h2></div>
         <div id="menu">
-            <a href="#" ><p>Meu Github</p></a>
+            <a href="#sectionGitHub" ><p>Meu Github</p></a>
            
-            <a href="#" ><p>Projetos</p></a>
+            <a href="#sectionProjetos" ><p>Projetos</p></a>
            
         </div>
         <div id="menuAba"><img src="./Sources/icons8-cardápio-50.png" id="btnmenu" alt="menu" width="30px"  statusAba="close" ></div>
 
     </header>
     <section id="aba">
-        <a href="#" ><p>Meu Github</p></a>
+        <a href="#sectionGitHub" ><p>Meu Github</p></a>
      
            
-        <a href="#" ><p>Projetos</p></a>
+        <a href="#sectionProjetos" ><p>Projetos</p></a>
         
     </section>
 
@@ -55,12 +55,29 @@
         <div id="gitHub"><img src="./Sources/96695552.jpg" style="border-radius: 250px; animation-name: gitanime; animation-duration: 500ms; animation-iteration-count: infinite; animation-fill-mode: forwards; animation-direction: alternate; animation-timing-function: cubic-bezier(0,1,0,0);"
              width="250px" alt="FotoPerfil"><br>
            
-             <p>Olá, me chamo Luiz Fernando, tenho 19 anos e estou atualmente estudando Desenvolvimento Web Full Stack com <a href="https://programadorbr.com/" target="_blank" rel="noreferrer noopener" style="color:#cf1829; text-decoration: none;">Programador BR.</a></p></div>
+             <p>Olá, me chamo Luiz Fernando, tenho 19 anos e estou atualmente estudando Desenvolvimento Web Full Stack com <a href="https://programadorbr.com/" target="_blank" rel="noreferrer noopener" class="link">Programador BR.</a></p></div>
         <div id="gitHubLink">
-            <p>Você pode encontrar todos os meus projetos no meu perfil do GitHub<br>Clique <a href="#" style="text-decoration: none; color: #cf1829;">aqui</a> para acessar</p>
+            <p>Você pode encontrar todos os meus projetos no meu perfil do GitHub<br>Clique <a href="#" class="link">aqui</a> para acessar</p>
         </div>
     </section>
-    <footer style="background-color: black; height: 200px; display: flex; justify-content: center; align-items: center;">
+    <section id="sectionProjetos">
+        <div id="site" class="projetos">
+            <h2>Meu Site</h2>
+            <p>Esse projeto começou com a intenção e a única função de armazenar alguns<br>dos meus projetos do GitHub<br>Você pode acessar ele clicando <a href="https://luizfernando022.github.io/MeuSite/" rel="noreferrer noopener" target="_blank" class="link">Aqui</a></p>
+        </div>
+
+        <div id="calcular" class="projetos">
+           <h2>Calcular Viagem</h2>
+           <p>Calcular Viagem é um projeto que pede algumas informações e faz um calculo com base nelas<br> mostrando se você pode ou não viajar.<br> Acesse o site clicando <a href="https://luizfernando022.github.io/CalcularViagem/" rel="noreferrer noopener" target="_blank" class="link">Aqui</a></p>
+        </div>
+            
+        <div id="pixel" class="projetos">
+           <h2>Pixels Race</h2>
+           <p>Pixels Race é um game para navegador que faz com que dois pontos apostem corrida<br>
+        O resultado de quem vai ganhar é Aleatório e decidido no momento do start.<br>Acesse o Game <a href="https://luizfernando022.github.io/Simple-Pixel-Game/" rel="noreferrer noopener" target="_blank" class="link">Aqui</a></p>
+        </div>
+    </section>
+    <footer style="background-color: black; height: 100px; display: flex; justify-content: center; align-items: center; min-width: 300px;">
         <p style=" color: gray;">© Powered By Luiz Schineider</p>
     </footer>
 </body>

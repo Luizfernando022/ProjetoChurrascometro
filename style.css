@@ -1,12 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap");
 
 body {
   font-family: Arial, Helvetica, sans-serif;
   padding-top: 70px;
   overflow-x: hidden;
-  color:rgb(191, 191, 191);
+  background-color: rgb(34, 34, 34);
 }
-
+html {
+  scroll-behavior: smooth;
+}
+.link {
+  text-decoration: none;
+  color: #cf1829;
+}
 * {
   padding: 0;
   margin: 0;
@@ -21,7 +27,7 @@ body {
 #menu > a {
   text-decoration: none;
   color: black;
-  font-family: Nunito,sans-serif;
+  font-family: Nunito, sans-serif;
   font-size: 18px;
   font-weight: 600;
   padding: 25px 20px;
@@ -33,9 +39,13 @@ body {
   transform: scale(1.1);
   background-color: rgb(34, 34, 34);
 }
-@keyframes gitanime{
-  0%{border: 4px solid gray;}
-  100%{border: 4px solid black}
+@keyframes gitanime {
+  0% {
+    border: 4px solid gray;
+  }
+  100% {
+    border: 4px solid black;
+  }
 }
 @keyframes calcAnimation {
   0% {
@@ -73,7 +83,9 @@ header {
   overflow: hidden;
   border-bottom: 1px solid gray;
 }
-header, h2,p{
+header,
+h2,
+p {
   color: white;
 }
 #menuAba {
@@ -85,7 +97,7 @@ header, h2,p{
   width: 60px;
   display: none;
 }
-#aba{
+#aba {
   background-color: black;
   height: 0px;
   overflow: hidden;
@@ -98,14 +110,13 @@ header, h2,p{
   transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
   min-width: 300px;
 }
-#aba > a{
+#aba > a {
   text-decoration: none;
   color: black;
-  font-family: Nunito,sans-serif;
+  font-family: Nunito, sans-serif;
   font-weight: 600;
   padding: 30px 20px;
 }
-
 
 #sectionCalc {
   background-color: rgb(34, 34, 34);
@@ -116,7 +127,7 @@ header, h2,p{
   align-items: center;
   background-position: center;
 }
-#sectionCalc h2{
+#sectionCalc h2 {
   color: gray;
 }
 #calc {
@@ -230,7 +241,7 @@ header, h2,p{
   background-color: black;
   color: gray;
 }
-#sectionGitHub{
+#sectionGitHub {
   background-image: url(./Sources/thumb-1920-985381.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -238,26 +249,26 @@ header, h2,p{
   height: 700px;
   display: flex;
   flex-direction: row;
-  justify-content:space-around;
+  justify-content: space-around;
   align-items: center;
   min-width: 300px;
   text-align: center;
 }
-#gitHub{
- height: 90%;
- width: 30%;
- margin-left: 40px;
-/* background-color: red; */
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-color: rgb(191, 191, 24);
+#gitHub {
+  height: 90%;
+  width: 30%;
+  margin-left: 40px;
+  /* background-color: red; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgb(191, 191, 24);
 }
-#gitHub p{
+#gitHub p {
   color: gray;
 }
-#gitHubLink{
+#gitHubLink {
   height: 90%;
   width: 30%;
   display: flex;
@@ -266,10 +277,45 @@ color: rgb(191, 191, 24);
   align-items: center;
   flex-wrap: wrap;
 }
-#gitHubLink p{
+#gitHubLink p {
   color: gray;
 }
+#sectionProjetos{
+  background-color: rgb(34, 34, 34);
+  height: 1400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  min-width: 300px;
+  margin: 70px 0px;
+}
+#site{
+  background-image: url(./Sources/sitewall.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 
+}
+#calcular{
+  background-image: url(./Sources/viagemwall.jpg);
+  background-position:30px 20px;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: black;
+}
+#pixel{
+  background-image: url(./Sources/pixelswall.jpg);
+}
+.projetos{
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  min-width: 300px;
+}
 
 @media screen and (max-width: 768px) {
   #calc {
@@ -294,7 +340,7 @@ color: rgb(191, 191, 24);
     width: calc(100% - 20px);
     padding: 10px;
   }
-  #logo{
+  #logo {
     margin-left: 10px;
   }
   header {
@@ -314,20 +360,19 @@ color: rgb(191, 191, 24);
   }
   #menuAba {
     display: flex;
-    
   }
-  #sectionGitHub{
+  #sectionGitHub {
     flex-direction: column;
     height: 700px;
     align-items: center;
     justify-content: e;
   }
-  #gitHub{
+  #gitHub {
     width: 100%;
     margin-left: 0px;
     margin-top: 20px;
   }
-  #gitHubLink{
+  #gitHubLink {
     width: 100%;
     margin-left: 0px;
     margin-top: 20px;

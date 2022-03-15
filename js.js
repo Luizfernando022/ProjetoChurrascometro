@@ -34,8 +34,7 @@ btn.addEventListener("click", () => {
     document.getElementById("erro").style.color = "red";
     document.getElementById("erro").style.textShadow = "1px 1px 10px";
   } else {
-    let quantidadeCarne =
-      (carne(duracao) * adulto + (crianca * carne(duracao)) / 2) / 1000;
+    let quantidadeCarne = ((carne(duracao) * adulto) + (carne(duracao) * nAlcoolotra) + (crianca * carne(duracao)/ 2)) / 1000;
     let quantidadeAgua = (adulto + crianca + nAlcoolotra) * agua(duracao);
     let quantidadeRefrigerante =
       (nAlcoolotra + crianca) * refrigerante(duracao);
