@@ -19,26 +19,44 @@ onload = () => {
 };
 
 btn.addEventListener("click", () => {
-  let crianca = parseInt(document.getElementById("i1").value);
-  let adulto = parseInt(document.getElementById("i2").value);
-  let nAlcoolotra = parseInt(document.getElementById("i3").value);
-  let duracao = parseInt(document.getElementById("i4").value);
+  let criancaInput= document.getElementById("i1").value;
+  let adultoInput = document.getElementById("i2").value;
+  let nAlcoolotraInput = document.getElementById("i3").value;
+  let duracaoInput = document.getElementById("i4").value;
   let resultCarne = document.getElementById("r1");
   let resultRefrigerante = document.getElementById("r2");
   let resultAgua = document.getElementById("r3");
   let resultCerveja = document.getElementById("r4");
 
-  if (crianca === "" && adulto === "" && nAlcoolotra === "") {
+  if (criancaInput === "" && adultoInput === "" && nAlcoolotraInput === "") {
     document.getElementById("erro").innerHTML =
       "<p>Informe a quantidade de pessoas!!";
     document.getElementById("erro").style.color = "red";
     document.getElementById("erro").style.textShadow = "1px 1px 10px";
   } else {
+
+    if(criancaInput === ""){
+      criancaInput = 0
+    }
+    if(adultoInput === ""){
+      adultoInput = 0
+    }
+    if(nAlcoolotraInput === ""){
+      nAlcoolotraInput = 0
+    }
+
+    let duracao = parseInt(duracaoInput)
+    let crianca = parseInt(criancaInput)
+    let adulto = parseInt(adultoInput)
+    let nAlcoolotra = parseInt(nAlcoolotraInput)
+
+    console.log(crianca)
+   
     let quantidadeCarne = ((carne(duracao) * adulto) + (carne(duracao) * nAlcoolotra) + (crianca * carne(duracao)/ 2)) / 1000;
     let quantidadeAgua = (adulto + crianca + nAlcoolotra) * agua(duracao);
-    let quantidadeRefrigerante =
-      (nAlcoolotra + crianca) * refrigerante(duracao);
+    let quantidadeRefrigerante = (nAlcoolotra + crianca) * refrigerante(duracao);
     let quantidadeCerveja = cerveja(duracao) * adulto;
+   
 
     document.getElementById("calc").style.animationName = "calcAnimationOut";
     document.getElementById("result").style.animationName = "resultAnimation";
