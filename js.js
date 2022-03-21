@@ -49,7 +49,7 @@ btn.addEventListener("click", () => {
     let crianca = parseInt(criancaInput)
     let adulto = parseInt(adultoInput)
     let nAlcoolotra = parseInt(nAlcoolotraInput)
-
+    
     console.log(crianca)
    
     let quantidadeCarne = ((carne(duracao) * adulto) + (carne(duracao) * nAlcoolotra) + (crianca * carne(duracao)/ 2)) / 1000;
